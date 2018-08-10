@@ -84,29 +84,6 @@ System.out.println(mmc(5, 8, 91, 101) == 367640);
 
 Use o Wolfram Alpha como oráculo para criar novos testes, por exemplo: <https://www.wolframalpha.com/input/?i=lcm(5,+8,+91,+101)>
 
-### Desbastar String (_chop_) 0.1 pts
-
-Implementar o método `chop`, em classe separada `Text`, que toma uma `String` de entrada e devolve outra sem o último caractere.
-
-Casos de Teste:
-
-```java
-String s1 = "seven of nine";
-String s2 = Text.chop(s1);
-System.out.println(s1); // seven of nine
-System.out.println(s2); // seven of nin
-System.out.println(s2.equals("seven of nin") == true); // true
-String s3 = Text.chop(s2);
-System.out.println(s3); // seven of ni
-System.out.println(s3.equals("seven of ni") == true); // true
-System.out.println(Text.chop("spock").equals("spoc") == true);
-// Casos Especiais
-System.out.println(Text.chop("Q").equals("") == true);
-System.out.println(Text.chop("").equals("") == true);
-System.out.println(Text.chop(Text.chop(Text.chop("abc"))).equals("") == true);
-// Adicione mais 2 Casos de Teste:
-```
-
 ### Rotacionar String (_rotate_) 0.1 pts
 
 Dada uma `String` de entrada rotacioná-la em sentido horário.
@@ -129,6 +106,29 @@ System.out.println(Text.rotate("").equals("") == true);
 System.out.println(Text.rotate("a").equals("a") == true);
 System.out.println(Text.rotate("aa").equals("aa") == true);
 // Adicione mais 2 Casos de Teste
+```
+
+### Desbastar String (_chop_) 0.1 pts
+
+Implementar o método `chop`, em classe separada `Text`, que toma uma `String` de entrada e devolve outra sem o último caractere.
+
+Casos de Teste:
+
+```java
+String s1 = "seven of nine";
+String s2 = Text.chop(s1);
+System.out.println(s1); // seven of nine
+System.out.println(s2); // seven of nin
+System.out.println(s2.equals("seven of nin") == true); // true
+String s3 = Text.chop(s2);
+System.out.println(s3); // seven of ni
+System.out.println(s3.equals("seven of ni") == true); // true
+System.out.println(Text.chop("spock").equals("spoc") == true);
+// Casos Especiais
+System.out.println(Text.chop("Q").equals("") == true);
+System.out.println(Text.chop("").equals("") == true);
+System.out.println(Text.chop(Text.chop(Text.chop("abc"))).equals("") == true);
+// Adicione mais 2 Casos de Teste:
 ```
 
 ### Valor absoluto de um número 0.1 pts
